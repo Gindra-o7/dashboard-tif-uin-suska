@@ -29,24 +29,18 @@ const defaultSteps: Step[] = [
   },
   {
     number: 3,
-    title: "Surat Undangan",
-    subtitle: "Upload Dokumen",
-    status: "pending",
-  },
-  {
-    number: 4,
     title: "Seminar KP",
     subtitle: "Informasi",
     status: "pending",
   },
   {
-    number: 5,
+    number: 4,
     title: "Pasca Seminar KP",
     subtitle: "Upload Dokumen",
     status: "pending",
   },
   {
-    number: 6,
+    number: 5,
     title: "Selesai",
     subtitle: "",
     status: "pending",
