@@ -6,7 +6,6 @@ import Step2 from "@/components/mahasiswa/seminar/steps/step2";
 import Step3 from "@/components/mahasiswa/seminar/steps/step3";
 import Step4 from "@/components/mahasiswa/seminar/steps/step4";
 import Step5 from "@/components/mahasiswa/seminar/steps/step5";
-import Step6 from "@/components/mahasiswa/seminar/steps/step6";
 import APISeminarKP from "@/services/api/mahasiswa/seminar-kp.service";
 import DashboardLayout from "@/components/globals/layouts/dashboard-layout";
 import { LayoutGridIcon } from "lucide-react";
@@ -21,10 +20,9 @@ interface SeminarData {
     step3_accessible: boolean;
     step4_accessible: boolean;
     step5_accessible: boolean;
-    step6_accessible: boolean;
   };
   dokumen_seminar_kp: {
-    [key in `step${1 | 2 | 3 | 4 | 5 | 6}`]: any[];
+    [key in `step${1 | 2 | 3 | 4 | 5}`]: any[];
   };
 }
 
@@ -34,7 +32,7 @@ interface ApiResponse {
   data?: SeminarData;
 }
 
-const stepComponents: any = [Step1, Step2, Step3, Step4, Step5, Step6];
+const stepComponents: any = [Step1, Step2, Step3, Step4, Step5];
 
 export default function MahasiswaSeminarValidasiBerkasPage() {
   const navigate = useNavigate();
