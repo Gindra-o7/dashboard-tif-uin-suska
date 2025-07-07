@@ -30,7 +30,7 @@ interface DokumenStep {
   step1: Dokumen[];
   step2: Dokumen[];
   step3: Dokumen[];
-  step5: Dokumen[];
+  step4: Dokumen[];
 }
 
 interface ValidasiPascaSeminarModalProps {
@@ -88,10 +88,10 @@ const ValidasiPascaSeminarModal: FC<ValidasiPascaSeminarModalProps> = ({
   useEffect(() => {
     if (student && isOpen) {
       console.log("Student data:", student);
-      console.log("Dokumen step5:", student?.dokumen?.step5);
+      console.log("Dokumen step4:", student?.dokumen?.step4);
 
       const initialDocs =
-        student?.dokumen?.step5?.map((doc) => {
+        student?.dokumen?.step4?.map((doc) => {
           let isAccepted = false;
           let isRejected = false;
           let rejectionReason = "";
@@ -276,8 +276,8 @@ const ValidasiPascaSeminarModal: FC<ValidasiPascaSeminarModalProps> = ({
             </h3>
 
             <div className="space-y-2">
-              {student.dokumen?.step5 && student.dokumen.step5.length > 0 ? (
-                student.dokumen.step5.map((doc) => {
+              {student.dokumen?.step4 && student.dokumen.step4.length > 0 ? (
+                student.dokumen.step4.map((doc) => {
                   const docState = documents.find((d) => d.id === doc.id);
                   return (
                     <div
