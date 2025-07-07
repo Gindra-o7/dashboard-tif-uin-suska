@@ -62,7 +62,7 @@ interface DokumenStep {
   step1: Dokumen[];
   step2: Dokumen[];
   step3: Dokumen[];
-  step5: Dokumen[];
+  step4: Dokumen[];
 }
 
 interface ValidasiIDModalProps {
