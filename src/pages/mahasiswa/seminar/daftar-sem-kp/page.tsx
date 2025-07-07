@@ -21,13 +21,12 @@ interface SeminarData {
     step3_accessible: boolean;
     step4_accessible: boolean;
     step5_accessible: boolean;
-    step6_accessible: boolean;
   };
   dokumen_seminar_kp: {
     step1: any[];
     step2: any[];
     step3: any[];
-    step5: any[];
+    step4: any[];
   };
   jadwal: {
     status: string;
@@ -101,10 +100,6 @@ export default function MahasiswaSeminarDaftarPage() {
 
     if (stepState?.step5_accessible) {
       currentStep = 4
-    }
-
-    if (stepState?.step6_accessible) {
-      currentStep = 5
     }
 
     return currentStep;
