@@ -135,23 +135,18 @@ const PendaftaranCard: React.FC<PendaftaranCardProps> = ({
       description: "Upload ID surat undangan seminar",
     },
     {
-      label: "Surat Undangan",
-      step: 2,
-      description: "Upload link surat undangan seminar",
-    },
-    {
       label: "Seminar KP",
-      step: 3,
+      step: 2,
       description: "Pelaksanaan seminar kerja praktik",
     },
     {
       label: "Pasca Seminar",
-      step: 4,
+      step: 3,
       description: "Upload link dokumen pasca seminar",
     },
     {
       label: "Nilai KP",
-      step: 5,
+      step: 4,
       description: "Nilai akhir kerja praktik",
     },
   ];
