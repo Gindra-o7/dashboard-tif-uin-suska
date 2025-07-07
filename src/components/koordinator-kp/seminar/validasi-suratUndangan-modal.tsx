@@ -30,7 +30,7 @@ interface DokumenStep {
   step1: Dokumen[];
   step2: Dokumen[];
   step3: Dokumen[];
-  step5: Dokumen[];
+  step4: Dokumen[];
 }
 
 interface ValidasiSuratUndanganModalProps {
@@ -401,7 +401,7 @@ const ValidasiSuratUndanganModal: FC<ValidasiSuratUndanganModalProps> = ({
 
 const getNamaDokumen = (jenis: string): string => {
   const names: Record<string, string> = {
-    SURAT_UNDANGAN_SEMINAR_KP: "Surat Undangan Seminaar KP",
+    SURAT_UNDANGAN_SEMINAR_KP: "Surat Undangan Seminar KP",
   };
   return names[jenis] || "Dokumen Tidak Diketahui";
 };
