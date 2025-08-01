@@ -721,11 +721,11 @@ const LandingPage = () => {
               <div>
                 <div className="flex flex-col items-center space-y-4 md:items-start">
                   <div className="flex items-center gap-2">
-                    <PhoneCall className="w-5 h-5 " />
+                    <PhoneCall className="w-5 h-5" />
                     <a href="tel:+6281376177745" target="_blank">+62 813-7617-7745</a>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Mail className="w-5 h-5 " />
+                    <Mail className="w-5 h-5" />
                     <a target="_blank" href="mailto:tif@uin-suska.ac.id">
                       tif@uin-suska.ac.id
                     </a>
